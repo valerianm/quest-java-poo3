@@ -52,7 +52,7 @@ public class Eagle extends Bird implements Fly {
     }
 
     public void land() {
-        if(this.flying && this.altitude == 0) {
+        if(this.flying && this.altitude <= 1) {
             this.flying = false;
             System.out.println(this.getName() + " lands.");
         }
